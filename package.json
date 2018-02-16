@@ -16,6 +16,7 @@
  "dependencies": {
   "chalk": "^2.3.0",
   "figlet": "^1.2.0",
+  "node-fetch": "^2.0.0",
   "ohm-js": "^0.14.0"
  },
  "devDependencies": {

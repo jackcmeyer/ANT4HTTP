@@ -22,6 +22,7 @@ replServer.on('exit', () => {
   process.exit();
 });
 
-function evaluator(cmd, context, filename, callback) {
-  callback(null, new Evaluator().evaluate(cmd));
+async function evaluator(cmd, context, filename, callback) {
+  const value = await new Evaluator().evaluate(cmd);
+  callback(null, value);
 }
